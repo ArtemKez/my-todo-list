@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+.start {
+    background-color: #0059ff;
+    color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.done {
+    background-color: green;
+    color: white;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ol {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 12px;
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    margin: 5px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.btns {
+    margin-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete {
+    padding: 5px;
+    background-color: black;
+    color: red;
+    border: 2px solid red;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.lastChanceToReturnAsItWas {
+    position: absolute;
+    background-color: rgba(124, 124, 124, 0.5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.disNone {
+    display: none;
+}
+
+.blackBlock {
+    background-color: black;
+    font-size: 20px;
+    color: red;
+    border: 2px solid red;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    height: 150px;
+    margin: calc(50% - 140px) auto;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    padding: 5px;
+    background-color: black;
+    color: red;
+    border: 2px solid red;
+    margin: 50px 10px 0 10px;
+    border-radius: 5px;
+    font-size: 20px;
 }
